@@ -12,7 +12,7 @@ eureka:
     prefer-ip-address: true
 zuul:
   routes:
-    plat.serviceId: aigou-plat #这是调用满足条件的服务名，注意要小写
-    plat.path: /plat/** #这是所有路径前的通配
-  ignored-services: "*" #用*来通配符，忽略从9527端口通过服务名来调用
-prefix: "/service" #这是所有路径的前缀
+    aigouEmployee.serviceId: employee-provider
+    aigouEmployee.path: /employee/**  # 匹配 /xxx开头的请求映射到user-provider服务上
+  ignored-services: "*" #user-provider #忽略直接使用服务名访问  *忽略所有的
+  prefix: /aigou   # 访问前缀
