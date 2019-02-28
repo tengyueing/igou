@@ -8,4 +8,16 @@ eureka:
     service-url:
       defaultZone: http://localhost:7001/eureka
   instance:
-prefer-ip-address: true
+  prefer-ip-address: true
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  datasource:
+    url: jdbc:mysql://localhost:3306/aigou_product
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  type-aliases-package: cn.ty.springboot.domain,cn.ty.springboot.query
