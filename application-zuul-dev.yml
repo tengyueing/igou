@@ -16,7 +16,7 @@ zuul:
     aigouEmployee.path: /employee/**  # 匹配 /xxx开头的请求映射到user-provider服务上
     aigouProduct.serviceId: aigou-product
     aigouProduct.path: /product/**
-    aigouCommon.serviceId: aigou-common
+    aigouCommon.serviceId: common-provider
     aigouCommon.path: /common/**
   ignored-services: "*" #user-provider #忽略直接使用服务名访问  *忽略所有的
   prefix: /aigou   # 访问前缀
