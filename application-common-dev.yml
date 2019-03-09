@@ -4,6 +4,11 @@ server:
 spring:
   application:
     name: COMMON-PROVIDER
+spring:
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 127.0.0.1:9300
 eureka:
   instance:
     hostname: localhsot
